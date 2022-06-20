@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* 로그인 폼 */
+#loginform{
+    width:400px; 
+    height:500px;
+    margin:0 auto;
+    position: fixed; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    background:#fff;
+    z-index:999;
+    border-radius: 5px;
+    display: none;
+}
+#loginform h2{
+    text-align: center;
+    margin:45px 0  ;
+}
+#loginform .close {
+    position:absolute; top:2%; right:2%;
+}
+#loginform .close i {
+    color:#999;
+    transition: all 0.5s;
+}
+#loginform .close:hover i{
+    color:#000;
+}
+#loginform .loginbox{
+    padding-left: 10px;
+}
+#loginform #id,
+#loginform #password {
+    width: 95%;
+    height: 40px;
+    background: none;
+    border-style: solid;
+    border: 1px solid #ddd;
+    padding-left: 1em;
+    cursor: pointer;
+}
+#loginform #id:focus,
+#loginform #password:focus{
+    border:none;
+}
+#loginform .keep{
+    padding: 10px;
+}
+#loginform input[type='checkbox']{
+    margin:10px;
+}
+#loginform #login{
+    width:95%;
+    height: 40px;
+    margin-left: 0.5em;
+    cursor: pointer;
+    margin-bottom: 2em;
+    background: #445bff;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+}
+#loginform a {
+    margin:20px 45px;
+    font-weight: bold;
+}
+#loginform .line{
+    margin:20px 0 30px;
+    text-align: center;
+    display:flex;
+    flex-basis:100%;
+    align-items: center;
+}
+#loginform .line::before{
+    content:"";
+    flex-grow:1;
+    margin:0 16px;
+    background: #777;
+    height:1px;
+    font-size:0px;
+    line-height:0;
+}
+#loginform .line::after{
+    content:"";
+    flex-grow:1;
+    margin:0 16px;
+    background: #777;
+    height:1px;
+    font-size:0px;
+    line-height:0;
+}
+
+#loginform #search{
+    width:95%;
+    height: 40px;
+    margin-left: 0.5em;
+    cursor: pointer;
+    color:#fff;
+    background: #8393a7;
+    border:none;
+    font-weight: bold;
+}
+
+/* 이용약관 폼 */
+#userform{
+    width:460px; height:550px; margin: 0 auto; 
+    position: absolute; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    background:#fff;
+    z-index:999;
+    border-radius: 5px;
+}
+#userform h2{
+    text-align: center;
+    margin:30px 0 ;
+}
+#userform .close i {
+    color:#999;
+    transition: all 0.5s;
+}
+#userform .close:hover i{
+    color:#000;
+}
+#userform .checkBox .clearfix{
+    position: relative;
+}
+#userform .checkBox .clearfix>li:first-child{
+    width: 85%; padding: 15px 0 15px 27px; font-weight: 600;
+}
+#userform .checkBox>ul>li input{
+    position: absolute; 
+    top: 40%; 
+    left: 10px; 
+}
+#userform .checkBox textarea{
+    width: 96%; height: 90px; margin: 0 2%; background-color: #f7f7f7; 
+    border: 1px solid #ddd; border-radius:5px; text-align: left;
+}
+#userform textarea:focus {
+    outline: none;
+}
+#userform .footBtwrap{
+    margin-top: 15px;
+}
+#userform .footBtwrap>li{
+    float: left; width: 50%; height: 60px;
+}
+#userform .footBtwrap>li>button{
+    display: block; width: 95%; height: 100%; font-size: 18px;
+    text-align: center; line-height: 60px;
+}
+#userform .fBt1{
+    background: #fff; border:2px solid #445bff;
+    cursor: pointer;
+    border:none;
+    font-weight: bold;
+    color:#445bff;
+    margin-left: 0.5em;
+}
+#userform .fBt2{
+    cursor: pointer;
+    background: #445bff;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+}
+
+/* 회원가입 폼 */
+#joinform{
+    width:460px; height:500px; margin: 0 auto; 
+    position: fixed; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    background:#fff;
+    z-index:999;
+    border-radius: 5px;
+    display: none;
+}
+#joinform h2{
+    text-align: center;
+    margin:40px 0 20px  ;
+}
+#joinform .close {
+    position:absolute; top:2%; right:2%;
+}
+#joinform .close i {
+    color:#999;
+    transition: all 0.5s;
+}
+#joinform .user i {
+    color:#ddd;
+}
+#joinform .close:hover i{
+    color:#000;
+}
+#joinform .user{
+    font-size:75px;
+    text-align: center;
+    position: relative;
+    margin:12px 0;
+}
+#joinform .camera{
+    position:absolute; top:28%; right:40%;
+    border:1px solid #777;
+    background: #777;
+    opacity: 0.8;
+    border-radius: 50%;
+    padding:5px;
+}
+#joinform .joinbox{
+    padding-left: 10px;
+}
+#id,
+#password,
+#passwordcheck,
+#joinname {
+    width: 95%;
+    height: 40px;
+    background: none;
+    border-style: solid;
+    border: 1px solid #ddd;
+    padding-left: 1em;
+    cursor: pointer;
+}
+#joinform span{
+    color:#000;
+    font-weight: bold;
+    margin: 20px 0.5em;
+    display: inline-block;
+}
+#joinform #join{
+    width:95%;
+    height: 40px;
+    margin-left: 0.5em;
+    cursor: pointer;
+    margin: 2em 0;
+    background: #445bff;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+}

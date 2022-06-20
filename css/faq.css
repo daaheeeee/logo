@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+#header #nav .depth1 > li:nth-child(5){ color:#EC7022}
+
+#section article{
+    position:relative;
+    background: #282828;
+}
+#section article .text strong{
+    color:#445bff
+}
+#section .article2{
+    background: #000;
+    color:#445bff;
+    font-size:40px;
+    text-align: center;
+    padding:100px 0 0 0;
+    height:350px;
+
+}

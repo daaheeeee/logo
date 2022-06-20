@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+#header #nav .depth1>li:nth-child(3) {
+    color: #EC7022
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#section .article2 .title {
+    text-align: center;
+    color: #EC7022;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 100px 0px 50px 0;
+}
+
+#section .article3 .content {
+    background: linear-gradient(#EC7022, #FF6200);
+    padding-bottom:5%;
+}
+
+#section .article3 .bg-white {
+    width: 75%;
+    margin: 10px auto;
+    border-radius: 25px;
+    padding: 20px;
+    background: #fff;
+}
+
+#section .article3 .img-box {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    margin-left: 50px;
+}
+#section .article3 .img-box img{
+    /* transform: translateX(20%); */
+}
+
+#section .article3 .design .size img {
+    /* width: 130px;
+    height: 150px; */
+    margin-left: 13px;
+    
+}
+
+#section .article3 .container .develop {
+    margin-top: 100px;
+}
+
+#section .article3 .container .develop,
+#section .article3 .container .design {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#section .article3 .container .develop.on,
+#section .article3 .container .design.on{
+    /* animation: move 3s; */
+}
+
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(1, 0, 0.8, 1);
+    }
+    to{ transform: translateX(200px);}
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(1, 0, 0.8, 1);
+    }
+    50%{ transform: translateX(200px);}
+    100%{ transform: translateX(0);}
+}
+#section .article3 .container .text-box {
+    width: 100%;
+}
+
+#section .article3 .container .text-box p {
+    margin-bottom: 2%;
+}
+#section .article3 .container .text-box .mb-3{
+    margin-bottom: 3%;
+}
+#section .article3 .container .text-box .title-bold{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#section .article3 .container .detail {
+    font-size: 0.7em;
+}
+
+#section .article3 .container .button {
+    border: 1px solid #EC7022;
+    color: #EC7022;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 3px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+#section .article3 .container .button:hover{
+    background: #EC7022;
+    color:#fff;
+}
+
+@media screen and (max-width:1024px) {
+    #section .article3 .container .bg-white {
+        width: 90%
+    }
+
+    #section .article3 .container .img-box {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #section .article3 .container{ 
+        flex-direction: row;
+        max-width:100%;
+    }
+    #section .article3 .container .develop,
+    #section .article3 .container .design {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width:100%; height:0; padding: 68% 0 0 0;
+        position: relative;
+        margin: 40px 0px 0 4%;
+    }
+    #section .article3 .container .develop {
+        margin-top: 40px;
+    }
+    #section .article3 .container .design{
+        margin-right:30px;
+    }
+    #section .article3 .img-box {
+        margin: 0 auto;
+        /* width: 100%; */
+        position: absolute;
+        top:10%; left:30%;
+    }
+    #section .article3 .container .develop .img-box{
+        top:15%;
+    }
+
+    #section .article3 .container .img-box img {
+        width: 100%;
+    }
+    #section .article3 .text-box{ 
+        position:absolute;
+        top:45%; 
+    }
+
+    #section .article3 .container .size img {
+        margin-left: 0;
+        /* height: 100px;
+        width:auto; */
+    }
+    #section .article3 .container .text-box .mb-3{
+        font-size: 1.2em;
+        padding-bottom: 3%;
+    }
+    #section .article3 .container .text-box .title-bold{
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+    #section .article3 .container .text-box .detail{
+        padding-top: 2%;
+    }
+    #section .article3 .container .text-box .detail span{
+        display: block;
+    }
+
+    #section .article3 .container .button {
+        font-size: 1.1em;
+        padding: 5px 12px;
+        cursor: pointer;
+        font-weight: 800;
+        margin-top: 6%;
+    }
+}

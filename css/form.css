@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* 로그인 폼 */
+
+.row_login{max-width:950px; margin:0 auto; padding:0 15px; }
+
+#loginform{
+    /* width:400px; 
+    height:500px;
+    margin:0 auto;
+    position: fixed; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    background:#fff;
+    z-index:999;
+    border-radius: 5px;
+    display: none; */
+}
+#loginform .form_title_div .form_title_h1{
+    text-align: center;
+    margin:45px 0  ;
+    color:#EC7022;
+}
+#loginform .close {
+    position:absolute; top:2%; right:2%;
+}
+#loginform .close i {
+    color:#999;
+    transition: all 0.5s;
+}
+#loginform .close:hover i{
+    color:#0E4C9E;
+}
+#loginform .loginbox{
+    padding-left: 10px;
+}
+#loginform #id,
+#loginform #password,
+#loginform #password2{
+    width: 100%;
+    height: 40px;
+    background: none;
+    border-style: solid;
+    border: 1px solid #ddd;
+    padding-left: 1em;
+    cursor: pointer;
+    /* margin-left: 1em; */
+    border-radius: 10px;
+
+}
+#loginform #email:focus,
+#loginform #password:focus{
+    border:none;
+}
+#loginform .form_text_alert{    
+    padding-left: 1em;
+}
+#loginform .keep{
+    padding: 10px;
+}
+#loginform input[type='checkbox']{
+    margin:10px;
+}
+#loginform .submit_button{
+    width:100%;
+    height: 40px;
+    /* margin-left: 1em; */
+    cursor: pointer;
+    margin-bottom: 2em;
+    background: #EC7022;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#loginform .text_a{ margin:0 5%; font-weight: bold;}
+
+#loginform a:first-child{ float:left}
+#loginform a:last-child{float: right; right:0;}
+/* #loginform .line{
+    margin:20px 0 30px;
+    text-align: center;
+    display:flex;
+    flex-basis:100%;
+    align-items: center;
+}
+#loginform .line::before{
+    content:"";
+    flex-grow:1;
+    margin:0 10px;
+    background: #888;
+    height:1px;
+    font-size:0px;
+    line-height:0;
+}
+#loginform .line::after{
+    content:"";
+    flex-grow:1;
+    margin:0 10px;
+    background: #888;
+    height:1px;
+    font-size:0px;
+    line-height:0;
+} */
+
+#loginform .form_div{ padding:0 0 2% 0;}
+/* 이용약관 폼 */
+#userform{
+    /* width:460px; height:550px; margin: 0 auto; 
+    position: absolute; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    background:#fff;
+    z-index:999;
+    border-radius: 5px; */
+}
+#userform h2{
+    text-align: center;
+    margin:30px 0 ;
+}
+#userform .close i {
+    color:#999;
+    transition: all 0.5s;
+}
+#userform .close:hover i{
+    color:#000;
+}
+#userform .checkBox .clearfix{
+    position: relative;
+}
+#userform .checkBox .clearfix>li:first-child{
+    width: 85%; padding: 15px 0 15px 27px; font-weight: 600;
+}
+#userform .checkBox>ul>li input{
+    position: absolute; 
+    top: 40%; 
+    left: 10px; 
+}
+#userform .checkBox textarea{
+    width: 96%; height: 90px; margin: 0 2%; background-color: #f7f7f7; 
+    border: 1px solid #ddd; border-radius:5px; text-align: left;
+}
+#userform textarea:focus {
+    outline: none;
+}
+#userform .footBtwrap{
+    margin-top: 15px;
+}
+#userform .footBtwrap>li{
+    float: left; width: 50%; height: 60px;
+}
+#userform .footBtwrap>li>button{
+    display: block; width: 95%; height: 100%; font-size: 18px;
+    text-align: center; line-height: 60px;
+}
+#userform .fBt1{
+    background: #fff; border:2px solid #EC7022;
+    cursor: pointer;
+    border:none;
+    font-weight: bold;
+    color:#EC7022;
+    /* margin-left: 0.5em; */
+}
+#userform .fBt2{
+    cursor: pointer;
+    background: #EC7022;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+}
+
+/* 회원가입 폼 */
+#joinform{
+    /* width:460px; height:500px; margin: 0 auto; 
+    position: fixed; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    background:#fff;
+    z-index:999;
+    border-radius: 5px;
+    display: none; */
+}
+#joinform .form_title_div .form_title_h1{
+    text-align: center;
+    margin:45px 0 20px 0  ;
+    color:#EC7022;
+}
+#joinform .close {
+    position:absolute; top:2%; right:2%;
+}
+#joinform .close i {
+    color:#999;
+    transition: all 0.5s;
+}
+#joinform .close:hover i{
+    color:#0E4C9E;
+}
+#joinform .user{
+    font-size:75px;
+    text-align: center;
+    position: relative;
+    margin:12px 0;
+    color:#999
+}
+#joinform .form_div{ padding:0 0 2% 0;}
+#joinform .form_div:first-child{ padding:0 ;}
+#joinform .email_area{ display:flex; justify-content: center;  }
+#email,#email_domain, .select_common{
+    width: 33%;
+    height: 40px;
+    background: none;
+    border-style: solid;
+    border: 1px solid #ddd;
+    padding-left: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#joinform .email_area .ico_space{ 
+    margin:10px 0.3em;     
+    color:#000;
+    font-weight: bold;
+    display: inline-block; 
+}
+#joinform .email_area input{ margin:0 0 2% 0; }
+.select_common{ 
+    position:relative;
+    background: none;
+    border-style: solid;
+    border: 1px solid #ddd;
+    height: 40px;
+    border-radius: 10px;
+    margin-left:2%;
+    padding: 0;
+}
+#email_list{
+    border:none;   
+    position:absolute; top:25%;
+    width:100%;
+    padding: 0;
+}
+#email_list,#email,#email_domain, #password,
+#passwordcheck,
+#joinname,
+#userid,
+#phone:focus{ outline: none;}
+
+#password,
+#passwordcheck,
+#joinname,
+#userid,
+#phone {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border-style: solid;
+    border: 1px solid #ddd;
+    padding-left: 1em;
+    cursor: pointer;
+    /* margin-left: 1em; */
+    border-radius: 10px;
+
+}
+
+#joinform #join_button{
+    width:100%;
+    height: 40px;
+    /* margin-left: 1em; */
+    cursor: pointer;
+    margin-bottom: 2em;
+    background: #EC7022;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top:2em;
+}
