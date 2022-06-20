@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Page-Enter" content="BlendTrans(Duration=2.0)">
+    <meta http-equiv="Page-Exit" content="BlendTrans(Duration=2.0)">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/contect.css">
+    <link rel="stylesheet" href="./css/top_menu.css">
+    <link rel="stylesheet" href="./css/rwdcommon.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+    <title>homepage</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+
+<body class="hidden">
+    <div id="wrap">
+        <header id="header">
+            <div class="block">
+                <div class="block">
+                    <div class="top_menu">
+                        <a href="#"
+                            onclick='window.open("login.html","_blank","height=500,width=400, status=yes,toolbar=no,menubar=no,location=no");return false'>LOGIN</a>
+                        <a href="#"
+                            onclick='window.open("join.html","_blank","height=500,width=750, status=yes,toolbar=no,menubar=no,location=no");return false'>JOIN</a>
+                        <a href="cart.html">CART</a>
+                    </div>
+                    <div class="logo_nav">
+                        <div class="logo">
+                            <div class="h1">
+                                <h1><a href="index.html"><img src="images/logo_r.png" alt="프랭크엑스"></a></h1>
+                            </div>
+                            <!-- <div class="on_h1">
+                            <h1><a href="index.html"><img src="images/logo_darum_p.png" alt="다름로고온"></a></h1>
+                        </div> -->
+                        </div>
+                        <div class="opennav">
+                            <i class="fas fa-bars"></i> <!-- 닫기 아이콘은 bars 대신 times-->
+                        </div>
+                        <nav id="nav">
+                            <ul class="depth1 cf">
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li>
+                                    <a href="portfolio.html">PORTFOLIO</a>
+                                    <ul class="depth2">
+                                        <li><a href="portfolio.html">웹(Web)</a></li>
+                                        <li><a href="portfolio(app).html">앱(App)</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="company.html">COMPANY</a></li>
+                                <li><a href="column.html">COLUMN</a></li>
+                                <li><a href="help.html">도움말</a></li>
+                                <li><a href="pay.html">견적내기</a></li>
+                                <li><a href="contect.html">CONTECT</a></li>
+                                <li><a href="#none">상담하기</a></li>
+                            </ul>
+                        </nav>
+                        <nav id="navi">
+                            <ul class="depth1 cf">
+                                <!-- <li><a href="#">로그인이 필요합니다.<button type="button" class="login">로그인</button></a></li> -->
+                                <li><button type="button" class="login">LOGIN</button></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li>
+                                    <a href="portfolio.html">PORTFOLIO</a>
+                                    <ul class="depth2">
+                                        <li><a href="portfolio.html">웹(Web)</a></li>
+                                        <li><a href="portfolio(app).html">앱(App)</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="company.html">COMPANY</a></li>
+                                <li><a href="column.html">COLUMN</a></li>
+                                <li><a href="help.html">도움말</a></li>
+                                <li><a href="pay.html">견적내기</a></li>
+                                <li><a href="contect.html">CONTECT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+        </header>
+
+        <section id="section">
+            <article class="article1 row">
+            </article>
+            <article class="article2">
+                <div class="title container">
+                    <h1 class="title">CONTECT</h1>
+                </div>
+            </article>
+            <article class="article3 ">
+                <div class="back"></div>
+                <div class="text_box row2">
+                    <h1 class="text_box_title">소프트웨어전문회사<br> 프랭크엑스입니다.</h1>
+                    <div class="text_box_span_box">
+                        <span class="text_box_span">
+                            문의메일 : minje6595@kakao.com <br><br>
+                            유선상담 : 010.7535.5353 <br><br>
+                        </span>
+                    </div>
+                </div>
+                <div class="form_box">
+                    <form action="#" method="post" name="appForm" class="appForm row2">
+                        <fieldset>
+                            <ul class="app_list">
+                                <li class="cf">
+                                    <label for="name_1b1" class="tit_lbl pilsoo_item">개인정보 수집 및 이용 동의</label>
+                                    <textarea name="textarea" id="agree_lbl" class="app_content" readonly></textarea>
+                                    <div id="contactarea" class="app_content checkbox_area">
+                                        <p><input type="checkbox" class="css-checkbox" id="agree" name="agree"><label
+                                                for="agree" id="agree">개인정보 수집 및 이용에 동의합니다.</label></p>
+                                    </div>
+                                </li>
+                                <li class="cf">
+                                    <label for="name_1b1" class="tit_lbl pilsoo_item">업체명</label>
+                                    <div class="app_content"><input type="text" class="w100p" id="company_lbl"
+                                            name="company"></div>
+                                </li>
+                                <li class="cf">
+                                    <label for="user_lbl" class="tit_lbl pilsoo_item">담당자 성함</label>
+                                    <div class="app_content"><input type="text" class="w100p" id="name_lbl" name="name">
+                                    </div>
+                                </li>
+                                <li class="cf">
+                                    <label for="phone_lbl" class="tit_lbl pilsoo_item">연락처</label>
+                                    <div class="app_content">
+                                        <input type="text" class="w100p" id="phone_lbl" name="phone" />
+                                    </div>
+                                </li>
+                                <li class="cf">
+                                    <label for="email_lbl" class="tit_lbl pilsoo_item">이메일주소</label>
+                                    <div class="app_content"><input type="text" class="w100p" id="email_lbl"
+                                            name="email" /></div>
+                                </li>
+                                <li class="cf">
+                                    <span class="tit_lbl pilsoo">의뢰분야</span>
+                                    <div id="contactarea" class="app_content checkbox_area">
+                                        <p><input type="checkbox" class="css-checkbox" id="contact1"
+                                                name="homepage"><label for="contact1">홈페이지</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="contact2"
+                                                name="shopping"><label for="contact2">쇼핑몰</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="contact3"
+                                                name="rending"><label for="contact3">랜딩페이지</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="contact4"
+                                                name="detail"><label for="contact4">상세페이지</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="contact5"
+                                                name="branding"><label for="contact5">브랜딩</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="contact6" name="logo"><label
+                                                for="contact6">로고</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="contact7"
+                                                name="package"><label for="contact7">패키지</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="contact8" name="photo"><label
+                                                for="contact8">제품 사진촬영</label></p>
+                                    </div>
+                                </li>
+                                <li class="cf">
+                                    <label for="project_lbl" class="tit_lbl pilsoo_item">프로젝트 예산</label>
+                                    <div class="app_content"><input type="text" class="w100p" id="project_lbl"
+                                            name="project" /></div>
+                                </li>
+                                <li class="cf">
+                                    <label for="reference_link_lbl" class="tit_lbl nopilsoo">레퍼런스(링크의 경우)</label>
+                                    <div class="app_content">
+                                        <textarea id="link_lbl" class="w100p" name="reference"></textarea>
+                                    </div>
+                                </li>
+                                <li class="cf">
+                                    <label for="reference_file_lbl" class="tit_lbl nopilsoo">레퍼런스(파일의 경우)</label>
+                                    <div class="app_content">
+                                        <!-- <textarea id="file_lbl" class="w100p" name="reference"></textarea> -->
+                                        <input type="file" id="file_lbl" accept="image/*">
+                                        <img id="previewImg" width="700" alt="이미지 영역">
+                                    </div>
+                                </li>
+                                <li class="cf">
+                                    <span class="tit_lbl nopilsoo">정부지원사업진행 유무 및 사업의 종류</span>
+                                    <div id="governmentarea" class="app_content checkbox_area">
+                                        <p><input type="checkbox" class="css-checkbox" id="government1"
+                                                name="homepage"><label for="government1">청년창업사관학교 & 초기창업패키지 등 KIAT에서
+                                                진행하는 사업</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="government2"
+                                                name="shopping"><label for="government2">수출바우처 지원 사업</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="government3"
+                                                name="rending"><label for="government3">기타 정부가 주관하는 지원사업</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="government3"
+                                                name="rending"><label for="government3">정부지원사업 아님</label></p>
+                                    </div>
+                                </li>
+                                <li class="cf">
+                                    <span class="tit_lbl nopilsoo">상세문의 요청사항</span>
+                                    <div class="app_content"><input type="text" class="w100p" id="ask_lbl" name="ask" />
+                                    </div>
+                                </li>
+                                <li class="cf">
+                                    <span class="tit_lbl pilsoo_item">유입경로</span>
+                                    <div id="comearea" class="app_content checkbox_area">
+                                        <p><input type="checkbox" class="css-checkbox" id="come" name="search"><label
+                                                for="come1">검색</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="come" name="blog"><label
+                                                for="come2">네이버 블로그</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="come" name="sns"><label
+                                                for="come3">sns</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="come" name="recommend"><label
+                                                for="come4">지인추천</label></p>
+                                        <p><input type="checkbox" class="css-checkbox" id="come" name="else"><label
+                                                for="come5">기타</label></p>
+                                    </div>
+                                </li>
+                                <li class="cf">
+                                    <span class="tit_lbl pilsoo_item">원하시는 상담 시간</span>
+                                    <div class="choose">
+                                        <div class="app_content select_app"><input type="text" class="w160" id="date"
+                                                name="date" placeholder="년/월/일"></div>
+                                        <div class="app_content select_common">
+                                            <select title="시간 목록" id="select">
+                                                <option value="title">시/분</option>
+                                                <option value="self">직접입력</option>
+                                                <option value="9">오전 9:00</option>
+                                                <option value="930">오전 9:30</option>
+                                                <option value="10">오전 10:00</option>
+                                                <option value="1030">오전 10:30</option>
+                                                <option value="11">오전 11:00</option>
+                                                <option value="1130">오전 11:30</option>
+                                                <option value="12">오후 12:00</option>
+                                                <option value="1230">오후 12:30</option>
+                                                <option value="13">오후 13:00</option>
+                                                <option value="1330">오후 13:30</option>
+                                                <option value="12">오후 14:00</option>
+                                                <option value="1230">오후 14:30</option>
+                                                <option value="15">오후 15:00</option>
+                                                <option value="1530">오후 15:30</option>
+                                                <option value="16">오후 16:00</option>
+                                                <option value="1630">오후 16:30</option>
+                                                <option value="17">오후 17:00</option>
+                                                <option value="1730">오후 17:30</option>
+                                                <option value="18">오후 18:00</option>
+                                                <option value="1830">오후 18:30</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </fieldset>
+                </div>
+                <p class="btn_line">
+                    <!-- <button type="button" class="btn">등록</button> -->
+                    <button type="button" class="btn" onclick="register()">등록</button>
+                </p>
+                </form>
+
+            </article>
+        </section>
+
+        <footer id="footer">
+            <div class="bottom">
+                <a class="popup"
+                    href="javascript:openWindowPop('https://accounts.kakao.com/login?continue=http%3A%2F%2Fpf.kakao.com%2F_pcucxb%2Fchat%3Fapi_ver%3D1.1%26kakao_agent%3Dsdk%252F1.41.5%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fdaplace.co.kr%26app_key%3Dea01d10ce5f02ec5ff8371bcaf087261%26referer%3Dhttps%253A%252F%252Fdaplace.co.kr%252F', 'popup');"><img
+                        src="./images/bottom.png" alt="상담"></a>
+            </div>
+            <div class="article5">
+                <div class="text_5 row">
+                    <h4>1:1 견적 문의하기</h4>
+                    <p>바로 문의하기</p>
+                </div>
+                <div class="layer"></div>
+            </div>
+
+            <div class="logo_line">
+                <div class="logo row">
+                    <img src="./images/82096c37a7211.png" alt="kiat">
+                    <img src="./images/150cef9d12b97.png" alt="kidp">
+                    <img src="./images/a366d7eef7a28.png" alt="수출지원기반활용사업">
+                    <img src="./images/74396d6eeba07.png" alt="kosme">
+                    <img src="./images/87dcb28db239e.png" alt="나라장터">
+                </div>
+            </div>
+            <div class="footer_info row">
+                <div class="footer_img">
+                    <img src="./images/logo_r.png" alt="프랭크엑스">
+                </div>
+                <div class="footer_text">
+                    <h5>프랭크엑스 주식회사(FPrank X INC)</h5></span>
+                    <ul class="span_li">
+                        <li><span>대표자 <strong>이진욱</strong> </li>
+                        <li><span>주소 <strong>서울특별시 마포구 동교로 17안길 10, 2층 (서교동,옥산빌딩)</strong></span></li>
+                        <li><span>사업자등록번호 <strong>353-87-02261</strong> </span></li>
+                        <li><span>개인정보관리책임자 <strong>이진욱</strong> 통신판매신고번호</span></li>
+                        </dic>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var rdata = {};
+
+        function register() {
+            $.ajax({
+                type: "POST",
+                url: "contectInfo",
+                dataType: 'json',
+                async: false,
+                data: {
+                    'data': JSON.stringify(rdata),
+                    'company_lbl': $("#company_lbl").val(),
+                    'name_lbl': $("#name_lbl").val(),
+                    'phone_lbl': $("#phone_lbl").val(),
+                    'email_lbl': $("#email_lbl").val(),
+                    'contactarea': $("#contactarea").val(),
+                    'project_lbl': $("#project_lbl").val(),
+                    'link_lbl': $("#link_lbl").val(),
+                    'file_lbl': $("#file_lbl").val(),
+                    'governmentarea': $("#governmentarea").val(),
+                    'ask_lbl': $("#ask_lbl").val(),
+                    'comearea': $("#comearea").val(),
+                    'date': $("#date").val(),
+                    'select': $("#select").val(),
+                    'csrfmiddlewaretoken': '{{ csrf_token }}'
+                },
+                success: function (data) {
+                    console.log(data)
+                },
+                error: function (result) {
+                    alert("에러가 발생하였습니다.");
+                }
+            });
+        }
+    </script>
+
+    <script src="./js/sub.js"></script>
+    <script src="./js/contect.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

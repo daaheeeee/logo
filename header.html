@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/top_menu.css">
+    <link rel="stylesheet" href="./css/rwdcommon.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+    <title>header</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="block">
+            <div class="top_menu">
+                <a href="#" onclick='window.open("login.html","_blank","height=500,width=500, status=yes,toolbar=no,menubar=no,location=no");return false'>LOGIN</a>
+                <a href="#" onclick='window.open("join.html","_blank","height=500,width=500, status=yes,toolbar=no,menubar=no,location=no");return false'>JOIN</a>
+                <a href="cart.html">CART</a>
+            </div>
+            <div class="logo_nav">
+                <div class="logo">
+                    <div class="h1">
+                        <h1><a href="index.html"><img src="images/logo_r.png" alt="프랭크엑스"></a></h1>
+                    </div>
+                    <!-- <div class="on_h1">
+                        <h1><a href="index.html"><img src="images/logo_darum_p.png" alt="다름로고온"></a></h1>
+                    </div> -->
+                </div>
+                <div class="opennav">
+                    <i class="fas fa-bars"></i> <!-- 닫기 아이콘은 bars 대신 times-->
+                </div>
+                <nav id="nav">
+                    <ul class="depth1 cf">
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li>
+                            <a href="portfolio.html">PORTFOLIO</a>
+                            <ul class="depth2">
+                                <li><a href="portfolio.html">웹(Web)</a></li>
+                                <li><a href="portfolio(app).html">앱(App)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="company.html">COMPANY</a></li>
+                        <li><a href="column.html">COLUMN</a></li>
+                        <li><a href="help.html">도움말</a></li>
+                        <li><a href="pay.html">견적내기</a></li>
+                        <li><a href="contect.html">CONTECT</a></li>
+                        <li><a href="#none">상담하기</a></li>
+                    </ul>
+                </nav>
+                <nav id="navi">
+                    <ul class="depth1 cf">
+                        <!-- <li><a href="#">로그인이 필요합니다.<button type="button" class="login">로그인</button></a></li> -->
+                        <li><button type="button" class="login">LOGIN</button></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li>
+                            <a href="portfolio.html">PORTFOLIO</a>
+                            <ul class="depth2">
+                                <li><a href="portfolio.html">웹(Web)</a></li>
+                                <li><a href="portfolio(app).html">앱(App)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="company.html">COMPANY</a></li>
+                        <li><a href="column.html">COLUMN</a></li>
+                        <li><a href="help.html">도움말</a></li>
+                        <li><a href="pay.html">견적내기</a></li>
+                        <li><a href="contect.html">CONTECT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>        
+    </header>
+
+    <script src="./js/common.js"></script>
+
+
+</body>
+</html>

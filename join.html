@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css">
+    <title>join</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <div class="row_login">
+        <form action="#none" method="post" name="joinform" id="joinform">
+            <div class="form_title_div">
+                <h1 class="form_title_h1">회원가입</h1>
+            </div>
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="user">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <fieldset>
+                <ul class="joinbox">
+                    <li class="form_div cf">
+                        <div class="app_content email_area cf">
+                            <input type="text" id="email" title="이메일 주소" name="email" placeholder="이메일" />
+                            <span class="ico_space">@</span>
+                            <input type="text" title="이메일 제공업체 입력" name="email_domain" id="email_domain" disabled />
+                            <div class="select_common">
+                                <select title="이메일 제공업체 목록" id="email_list">
+                                    <option value="title">::이메일선택::</option>
+                                    <option value="self">직접입력</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="form_div cf">
+                        <div class="app_content"><input type="text" id="joinname" name="irum" placeholder="이름" /></div>
+                    </li>
+                    <li class="form_div cf">
+                        <div class="app_content"><input type="text" id="userid" placeholder="아이디"></div>
+                    </li>
+                    <li class="form_div cf">
+                        <div id="pwdarea" class="app_content"><input type="password" id="password" name="pwd" placeholder="비밀번호는 영문자, 숫자, 특수문자 3가지 이상 조합, 첫글자는 영어만 허용" />
+                            <!-- <p class="pwdhint">비밀번호는 영문자, 숫자, 특수문자 3가지 이상 조합하고, 첫글자는 영어만 허용합니다.</p> -->
+                        </div>
+                    </li>
+                    <li class="form_div cf">
+                        <div class="app_content"><input type="password" id="passwordcheck"
+                                placeholder="비밀번호를 다시 한번 입력해주세요" /></div>
+                    </li>
+                    <li class="form_div cf">
+                        <div class="app_content"><input type="text" id="phone" name="phone"
+                                placeholder="휴대폰”-”없이 숫자만 입력하세요" /></div>
+                    </li>
+
+
+                </ul>
+            </fieldset>
+            <div>
+                <button type="submit" id="join_button">가입하기</button>
+            </div>
+        </form>
+        </form>
+    </div>
+
+
+    <script src="./js/join.js"></script>
+</body>
+
+</html>

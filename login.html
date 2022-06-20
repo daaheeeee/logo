@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+    <title>login</title>
+</head>
+
+<body>
+
+    <div class="row_login">
+        <form action="#" method="post" name="loginform" id="loginform">
+            <div class="form_title_div">
+                <h1 class="form_title_h1">로그인</h1>
+            </div>
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="form_div">
+                <div>
+                    <input type="text" name="email" placeholder="이메일" id="id" />
+                </div>
+                <div class="form_text_alert">
+                    <div id="alert_email" class="form_text_alert"></div>
+                </div>
+            </div>
+            <div class="form_div">
+                <div>
+                    <input type="password" name="password" placeholder="Enter password" id="password" />
+                </div>
+                <div class="form_text_alert">
+                    <div id="alert_password" class="form_text_alert"></div>
+                </div>
+            </div>
+            <!-- <div class="form_div">
+                <div>
+                    <input type="password" name="password2" onfocus="" placeholder="Enter password again" id="password2" />
+                </div>
+                <div class="form_text_alert">
+                    <div id="alert_password2" class="form_text_alert"></div>
+                </div>
+            </div> -->
+            <div>
+                <button type="button" class="submit_button" onclick="login()">로그인</button>
+            </div>
+            <div class="text_a">
+                <a href="#none">회원가입</a>
+                <a href="#none">아이디 비밀번호 찾기</a>
+            </div>
+    </div>
+
+
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
